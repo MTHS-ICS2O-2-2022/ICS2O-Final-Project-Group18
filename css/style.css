@@ -22,17 +22,19 @@
   padding-top: 20pt;
   padding-right: 20pt;
   color: violet;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .mdl-textfield__input {
   color: black;
+  padding-left: 20pt;
 }
 
 .page-content {
   color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 3rem;
+  padding-left: 10pt;
 }
 
 body {
@@ -40,5 +42,12 @@ body {
 }
 
 img {
-  float: right;
+  float: center;
+}
+
+p {
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: large;
+  padding-left: 20pt;
 }
