@@ -11,13 +11,13 @@
   opacity: 0.001;
 }
 
-.mdl-layout__header-row {
+.mdl-layout-header-row {
   justify-content: center;
   padding: 0;
   color: beige;
 }
 
-.mdl-layout__content {
+.mdl-layout-content {
   padding-left: 30pt;
   padding-top: 20pt;
   padding-right: 20pt;
@@ -25,7 +25,7 @@
   font-size: xx-large;
 }
 
-.mdl-textfield__input {
+.mdl-textfield-input {
   color: black;
   padding-left: 20pt;
 }
