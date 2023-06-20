@@ -1,111 +1,106 @@
 <!DOCTYPE html>
 <!--ICS2O-Final Project-->
 <html lang="en-ca">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="description" content="Random Card Generator" />
     <meta name="keywords" content="mths, ICS2O" />
     <meta name="author" content="Lamees-Hemdan" />
     <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link
-    rel="stylesheet"
-    href="https://code.getmdl.io/1.3.0/material.blue-yellow.min.css"
-    />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-yellow.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/getmdl-select.css" />
     <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="./apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
     />
     <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./favicon-32x32.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
     />
     <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="./favicon-16x16.png"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <title>Random Card Generator</title>
-</head>
-<body>
+    <title>Random card Generator</title>
+  </head>
+
+  <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
     <script src="./js/getmdl-select.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed header">
-    <header class="mdl-layout__header">
+      <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Random Card Generator</span>
+          <span class="mdl-layout-title">Random Card Generator</span>
         </div>
-    </header>
-    <main class="mdl-layout__content">
-        <div class="page-content">Choose how many cards you want to draw:</div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="page-content">Choose how  many cards you want to draw:</div>
         <!-- Numeric Textfield -->
         <form action="#">
-        <div class="mdl-textfield mdl-js-textfield">
-        <input
-            class="mdl-textfield__input"
-            type="text"
-            pattern="-?[0-9]*(\.[0-9]+)?"
-            id="numberOfCards"
-        />
-        <label class="mdl-textfield__label" for="numberOfCards">Number of cards...</label>
-        <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        </form>
+          <div class="mdl-textfield mdl-js-textfield">
+          <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="number-of-cards"
+          />
+          <label class="mdl-textfield__label" for="number-of-cards">Number of cards...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          </form>
         <br />
-        <br />
-        <p>Select which card suit you want:</p>
+        <p>Which card suit you want?</p>
         <!-- Simple Select with arrow -->
         <div class="mdl-textfield mdl-js-textfield getmdl-select">
-        <input
+          <input
             type="text"
             value=""
             class="mdl-textfield__input"
             id="card-suit"
             readonly
-        >
-        <input type="hidden" value="" name="card-suit" />
-        <i class="mdl-icon-toggle__label material-icons"
+          />
+          <input type="hidden" value="" name="card-suit" />
+          <i class="mdl-icon-toggle__label material-icons"
             >keyboard_arrow_down</i
-        >
-        <label for="card-suit" class="mdl-textfield__label"
-            >Card Suit</label
-        >
-        <ul
+          >
+          <label for="card-suit" class="mdl-textfield__label"
+            >Card Suit
+          </label>
+          <ul
             for="card-suit"
             class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
-        >
-            <li class="mdl-menu__item" data-val="msty">Hearts</li>
-            <li class="mdl-menu__item" data-val="rom">Diamonds</li>
-            <li class="mdl-menu__item" data-val="adv">Spades</li>
-            <li class="mdl-menu__item" data-val="fic">Clubs</li>
-        </ul>
+          >
+            <li class="mdl-menu__item" data-val="1">Hearts</li>
+            <li class="mdl-menu__item" data-val="2">Diamonds</li>
+            <li class="mdl-menu__item" data-val="3">Clubs</li>
+            <li class="mdl-menu__item" data-val="4">Spades</li>
+          </ul>
         </div>
-        <br />
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button
-        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-        onclick="drawCards()">
-        Draw Cards
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="drawCards()"
+        >
+          Draw Cards
         </button>
         <br />
         <br />
-        <div id="number-of-cards"></div>
-        <div id="cards-suit"></div>
-        <div id="cards-number">
-        </div>
-    </main>
+        <div id="cost"></div>
+        <div id="card-images"></div>
+      </main>
     </div>
 </body>
 </html>
