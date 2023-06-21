@@ -10,7 +10,7 @@ function drawCards() {
   // This function draws the cards when button is clickd
 
   // input
-
+  
   let numberOfCards = document.getElementById("number-of-cards").value
   let cardSuit = document.getElementById("card-suit").value
   let cardNumber = 0
